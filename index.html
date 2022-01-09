@@ -1,1069 +1,510 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The LCSUG</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>The LCSUG</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-</head>
+  <body data-spy="scroll" data-target="#navbar">
+    <h1>The Lassonde Computer Science Unofficial Guide</h1>
+    <nav id="navbar" class="navbar sticky-top bg-white">
+      <ul class="nav nav-pills d-flex justify-content-between flex-grow-1">
+        <li class="nav-item flex-row"> <a class="nav-link" href="#curriculum">Curriculum</a> </li>
+        <li class="nav-item flex-row"> <a class="nav-link" href="#misc">Miscellaneous</a> </li>
+        <li class="nav-item flex-row"> <a class="nav-link" href="#coop">Co-op & Internships</a> </li>
+        <li class="nav-item flex-row"> <a class="nav-link" href="#faq">FAQ</a> </li>
+        <li class="nav-item flex-row"> <a class="nav-link" href="#author">About Author</a> </li>
+      </ul>
+    </nav> <br>
 
-<body data-spy="scroll" data-target="#navbar">
-  <h1>The Lassonde Computer Science Unofficial Guide</h1>
-
-  <nav id="navbar" class="navbar sticky-top bg-white">
-    <ul class="nav nav-pills d-flex justify-content-between flex-grow-1">
-      <li class="nav-item flex-row">
-        <a class="nav-link" href="#curriculum">Curriculum</a>
-      </li>
-      <li class="nav-item flex-row">
-        <a class="nav-link" href="#misc">Miscellaneous</a>
-      </li>
-      <li class="nav-item flex-row">
-        <a class="nav-link" href="#coop">Co-op & Internships</a>
-      </li>
-      <li class="nav-item flex-row">
-        <a class="nav-link" href="#faq">FAQ</a>
-      </li>
-      <li class="nav-item flex-row">
-        <a class="nav-link" href="#author">About Author</a>
-      </li>
-    </ul>
-  </nav>
-
-  <br>
-
-  <div id="cover-page-outer-container" class="landing">
-    <div>
-      <div id="cover-page-title">
-        A Handbook to Surviving Lassonde's Computer Science
+    <div id="cover-page-outer-container" class="landing">
+      <div>
+        <div id="cover-page-title"> A Guide to Surviving Lassonde's Computer Science </div>
+        <div id="cover-page-subtitle"> <p>(made by students, for students)</p> </div>
+        <img class="photo" src="./media/arrow.png">
+        <div id="cover-page-disclaimer">
+          <p><strong>IMPORTANT DISCLAIMER:</strong></p>
+          <p> This is <strong>not</strong> an offical website. This is a collection of things I wish I knew going into university. <br>
+            All content is opinionated and based on <strong>my experiences</strong>, so read with a grain of salt as needed. </p>
+        </div>
       </div>
-      <div id="cover-page-subtitle">
-        <p>(made by students, for students)</p>
-      </div>
+    </div> <br>
 
-      <br>
+    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+      <section id="curriculum">
+        <h2>Computer Science Curriculum</h2> <br>
+        <ul style="list-style-type:none">
+          <li><a data-toggle="collapse" href="#YEAR1" aria-expanded="false" aria-controls="YEAR1">Year 1 Courses</a></li>
+          <ul class="specialUL" style="list-style-type:none">
+            <div class="collapse" id="YEAR1"> <br>
+              <div class="card card-body">
+                <li><a data-toggle="collapse" href="#Y1course1" aria-expanded="false" aria-controls="Y1course1">EECS1001 - Research Directions in Computing</a></li>
+                <div class="collapse" id="Y1course1"> <br>
+                  <div class="card card-body">
+                    <strong>Research Directions in Computing - 1.00 credit</strong> <br>
+                    <div id="EECS1001"> <textbox name="EECS1001"></textbox> </div>
+                  </div>
+                </div> <br>
 
-      <img class="photo" src="./media/arrow.png">
-      <br><br>
+                <li><a data-toggle="collapse" href="#Y1course2" aria-expanded="false" aria-controls="Y1course2">EECS1012 (Intro to Computing, Web) or EECS1015 (Intro to Computing, Python)</a></li>
+                <div class="collapse" id="Y1course2"> <br>
+                  <div class="card card-body">
+                    <strong>EECS1012 or EECS1015, both 3.00 credits</strong> <br>
+                    <div id="EECS1012_1015"> <textbox name="EECS1012_1015"></textbox> </div>
+                  </div>
+                </div> <br>
 
-      <div id="cover-page-disclaimer">
-        <p><strong>IMPORTANT DISCLAIMER:</strong></p>
-        <p>
-          This is <strong>not</strong> an offical website. This is a collection of things I wish I knew going into university.<br>
-          Much of the content is <strong>opinionated</strong> and based on <strong>my experiences</strong>; so take it with a
-          <strong>grain of salt</strong> as needed.
-        </p>
-      </div>
+                <li><a data-toggle="collapse" href="#Y1course3" aria-expanded="false" aria-controls="Y1course3">EECS1019 - Discrete Mathematics for Computer Science</a></li>
+                <div class="collapse" id="Y1course3"> <br>
+                  <div class="card card-body">
+                    <strong>Discrete Mathematics for Computer Science - 3.00 credits</strong> <br>
+                    <div id="EECS1019"> <textbox name="EECS1019"></textbox> </div> <br>
+                    <a class="special-link" href="https://www.youtube.com/playlist?list=PLl-gb0E4MII0L5lz8uQ8j5aSFQQHoAzXx" target="_blank">This YouTube playlist helped a lot.</a>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y1course4" aria-expanded="false" aria-controls="Y1course4">EECS1022 - Programming for Mobile Computing</a></li>
+                <div class="collapse" id="Y1course4"> <br>
+                  <div class="card card-body">
+                    <strong>Programming for Mobile Computing - 3.00 credits</strong> <br>
+                    <div id="EECS1022"> <textbox name="EECS1022"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y1course5" aria-expanded="false" aria-controls="Y1course5">MATH1300 - Differential Calculus with Applications</a></li>
+                <div class="collapse" id="Y1course5"> <br>
+                  <div class="card card-body">
+                    <strong>Differential Calculus with Applications - 3.00 credits</strong> <br>
+                    <div id="MATH1300"> <textbox name="MATH1300"></textbox> </div> <br>
+                    <a class="special-link" href="http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx" target="_blank">This website helped a lot.</a>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y1course6" aria-expanded="false" aria-controls="Y1course6">MATH1310 - Integral Calculus with Applications</a></li>
+                <div class="collapse" id="Y1course6"> <br>
+                  <div class="card card-body">
+                    <strong>Integral Calculus with Applications - 3.00 credits</strong> <br>
+                    <div id="MATH1310"> <textbox name="MATH1310"></textbox> </div> <br>
+                    <a class="special-link" href="http://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx" target="_blank">This website helped a lot.</a>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y1course7" aria-expanded="false" aria-controls="Y1course7">Foundational Science Requirement</a></li>
+                <div class="collapse" id="Y1course7"> <br>
+                  <div class="card card-body">
+                    <strong>Foundational Science Requirement - 6.00 credits total</strong> <br>
+                    <div id="SCIENCES"> <textbox name="SCIENCES"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y1course8" aria-expanded="false" aria-controls="Y1course8">Electives</a></li>
+                <div class="collapse" id="Y1course8"> <br>
+                  <div class="card card-body">
+                    <strong>Electives</strong> <br>
+                    <div id="ELECTIVES_1"> <textbox name="ELECTIVES_1"></textbox> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul> <br>
+
+          <li><a data-toggle="collapse" href="#YEAR2" aria-expanded="false" aria-controls="YEAR2">Year 2 Courses</a></li>
+          <ul class="specialUL" style="list-style-type:none">
+            <div class="collapse" id="YEAR2"> <br>
+              <div class="card card-body">
+                <li><a data-toggle="collapse" href="#Y2course1" aria-expanded="false" aria-controls="Y2course1">EECS2001 - Introduction to the Theory of Computation</a></li>
+                <div class="collapse" id="Y2course1"> <br>
+                  <div class="card card-body">
+                    <strong>Introduction to the Theory of Computation - 3.00 credits</strong><br>
+                    <div id="EECS2001"> <textbox name="EECS2001"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y2course2" aria-expanded="false" aria-controls="Y2course2">EECS2011 - Fundamentals of Data Structures</a></li>
+                <div class="collapse" id="Y2course2"> <br>
+                  <div class="card card-body">
+                    <strong>Fundamentals of Data Structures - 3.00 credits</strong> <br>
+                    <div id="EECS2011"> <textbox name="EECS2011"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y2course3" aria-expanded="false" aria-controls="Y2course3">EECS2021 - Computer Organization</a></li>
+                <div class="collapse" id="Y2course3"> <br>
+                  <div class="card card-body">
+                    <strong>Computer Organization - 4.00 credits</strong> <br>
+                    <div id="EECS2021"> <textbox name="EECS2021"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y2course4" aria-expanded="false" aria-controls="Y2course4">EECS2030 - Advanced Object Oriented Programming</a></li>
+                <div class="collapse" id="Y2course4"> <br>
+                  <div class="card card-body">
+                    <strong>Advanced Object Oriented Programming - 3.00 credits</strong> <br>
+                    <div id="EECS2030"> <textbox name="EECS2030"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y2course5" aria-expanded="false" aria-controls="Y2course5">EECS2031 - Software Tools</a></li>
+                <div class="collapse" id="Y2course5"> <br>
+                  <div class="card card-body">
+                    <strong>Software Tools - 3.00 credits</strong> <br>
+                    <div id="EECS2031"> <textbox name="EECS2031"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y2course6" aria-expanded="false" aria-controls="Y2course6">MATH1090 - Introduction to Logic for Computer Science</a></li>
+                <div class="collapse" id="Y2course6"> <br>
+                  <div class="card card-body">
+                    <strong>Introduction to Logic for Computer Science - 3.00 credits</strong> <br>
+                    <div id="MATH1090"> <textbox name="MATH1090"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y2course7" aria-expanded="false" aria-controls="Y2course7">MATH2030 - Elementary Probability</a></li>
+                <div class="collapse" id="Y2course7"> <br>
+                  <div class="card card-body">
+                    <strong>Elementary Probability - 3.00 credits</strong> <br>
+                    <div id="MATH2030"> <textbox name="MATH2030"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y2course8" aria-expanded="false" aria-controls="Y2course8">Electives</a></li>
+                <div class="collapse" id="Y2course8"> <br>
+                  <div class="card card-body">
+                    <strong>Electives</strong> <br>
+                    <div id="ELECTIVES_2"> <textbox name="ELECTIVES_2"></textbox> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul> <br>
+
+          <li><a data-toggle="collapse" href="#YEAR3" aria-expanded="false" aria-controls="YEAR3">Year 3 Courses</a></li>
+          <ul class="specialUL" style="list-style-type:none">
+            <div class="collapse" id="YEAR3"> <br>
+              <div class="card card-body">
+                <li><a data-toggle="collapse" href="#Y3course1" aria-expanded="false" aria-controls="Y3course1">EECS3000 - Professional Practice in Computing</a></li>
+                <div class="collapse" id="Y3course1"> <br>
+                  <div class="card card-body">
+                    <strong>Professional Practice in Computing - 3.00 credits</strong> <br>
+                    <div id="EECS3000"> <textbox name="EECS3000"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y3course2" aria-expanded="false" aria-controls="Y3course2">EECS3101 - Design and Analysis of Algorithms</a></li>
+                <div class="collapse" id="Y3course2"> <br>
+                  <div class="card card-body">
+                    <strong>Design and Analysis of Algorithms - 3.00 credits</strong> <br>
+                    <div id="EECS3101"> <textbox name="EECS3101"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y3course3" aria-expanded="false" aria-controls="Y3course3">EECS3311 - Software Design</a></li>
+                <div class="collapse" id="Y3course3"> <br>
+                  <div class="card card-body">
+                    <strong>Software Design - 3.00 credits</strong> <br>
+                    <div id="EECS3311"> <textbox name="EECS3311"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y3course4" aria-expanded="false" aria-controls="Y3course4">EECS3215 (Embedded Systems) or EECS3221 (Operating System Fundamentals)</a></li>
+                <div class="collapse" id="Y3course4"> <br>
+                  <div class="card card-body">
+                    <strong>EECS3215 (4.00 credits) or EECS3221 (3.00 credits)</strong> <br>
+                    <div id="EECS3215_3221"> <textbox name="EECS3215_3221"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y3course5" aria-expanded="false" aria-controls="Y3course5">EECS3401 (Artificial Intelligence), EECS3421 (Database Systems), or EECS3461 (User Interfaces)</a></li>
+                <div class="collapse" id="Y3course5"> <br>
+                  <div class="card card-body">
+                    <strong>EECS3401, EECS3421, or EECS3461 - all are 3.00 credits</strong> <br>
+                    <div id="EECS3401_3421_3461"> <textbox name="EECS3401_3421_3461"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y3course6" aria-expanded="false" aria-controls="Y3course6">Electives</a></li>
+                <div class="collapse" id="Y3course6"> <br>
+                  <div class="card card-body">
+                    <strong>Electives</strong> <br>
+                    <div id="ELECTIVES_3"> <textbox name="ELECTIVES_3"></textbox> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul> <br>
+
+          <li><a data-toggle="collapse" href="#YEAR4" aria-expanded="false" aria-controls="YEAR4">Year 4 Courses</a></li>
+          <ul class="specialUL" style="list-style-type:none">
+            <div class="collapse" id="YEAR4"> <br>
+              <div class="card card-body">
+                <li><a data-toggle="collapse" href="#Y4course1" aria-expanded="false" aria-controls="Y4course1">EECS4XXX</a></li>
+                <div class="collapse" id="Y4course1"> <br>
+                  <div class="card card-body">
+                    <strong>EECS4XXX - 12.0 credits total</strong> <br>
+                    <div id="EECS4XXX"> <textbox name="EECS4XXX"></textbox> </div>
+                  </div>
+                </div> <br>
+
+                <li><a data-toggle="collapse" href="#Y4course2" aria-expanded="false" aria-controls="Y4course2">Electives</a></li>
+                <div class="collapse" id="Y4course2"> <br>
+                  <div class="card card-body">
+                    <strong>Electives</strong> <br>
+                    <div id="ELECTIVES_4"> <textbox name="ELECTIVES_4"></textbox> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul> <br>
+
+          <li><a data-toggle="collapse" href="#other" aria-expanded="false" aria-controls="other">Other Requirements</a></li>
+          <div class="collapse" id="other"> <br>
+            <div class="card card-body">
+              <strong>Other Requirements</strong> <br>
+              <div id="OTHER"> <textbox name="OTHER"></textbox> </div>
+            </div>
+          </div>
+      </section> <br> <h3></h3> <h3></h3> <br>
+
+      <section id="misc">
+        <h2>Miscellaneous & General Tips</h2> <br>
+        <ul style="list-style-type:none">
+          <li><a data-toggle="collapse" href="#learn" aria-expanded="false" aria-controls="learn">Learn Outside Lectures</a></li>
+          <div class="collapse" id="learn"> <br>
+            <div class="card card-body">
+              <strong>Learn Outside Lectures</strong> <br>
+              <div id="LEARNING"> <textbox name="LEARNING"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#organization" aria-expanded="false" aria-controls="organization">Staying Organized</a></li>
+          <div class="collapse" id="organization"> <br>
+            <div class="card card-body">
+              <strong>Staying Organized</strong> <br>
+              <div id="ORGANIZATION"> <textbox name="ORGANIZATION"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#summer" aria-expanded="false" aria-controls="summer">Using Your Summers Wisely</a></li>
+          <div class="collapse" id="summer"> <br>
+            <div class="card card-body">
+              <strong>Using Your Summers Wisely</strong> <br>
+              <div id="SUMMERS"> <textbox name="SUMMERS"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#time" aria-expanded="false" aria-controls="time">Time Management</a></li>
+          <div class="collapse" id="time"> <br>
+            <div class="card card-body">
+              <strong>Time Management</strong> <br>
+              <div id="TIME"> <textbox name="TIME"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#frans" aria-expanded="false" aria-controls="frans">Making Friends</a></li>
+          <div class="collapse" id="frans"> <br>
+            <div class="card card-body">
+              <strong>Making Friends</strong> <br>
+              <div id="FRIENDS"> <textbox name="FRIENDS"></textbox> </div>
+            </div>
+          </div>
+        </ul>
+      </section> <br> <h3></h3> <h3></h3> <br>
+
+      <section id="coop">
+        <h2>Co-op & Internships</h2> <br>
+        <ul style="list-style-type:none">
+          <li><a data-toggle="collapse" href="#intern" aria-expanded="false" aria-controls="intern">What's Co-Op / Internship?</a></li>
+          <div class="collapse" id="intern"> <br>
+            <div class="card card-body">
+              <strong>What's Co-Op / Internship?</strong> <br>
+              <div id="COOP_INTERNSHIPS"> <textbox name="COOP_INTERNSHIPS"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#why" aria-expanded="false" aria-controls="why">Why Should You Do Them?</a></li>
+          <div class="collapse" id="why"> <br>
+            <div class="card card-body">
+              <strong>Why Should You Do Them?</strong> <br>
+              <div id="WHY_INTERN"> <textbox name="WHY_INTERN"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#first" aria-expanded="false" aria-controls="first">How Do I Get My First?</a></li>
+          <div class="collapse" id="first"> <br>
+            <div class="card card-body">
+              <strong>How Do I Get My First?</strong> <br>
+              <div id="FIRST_INTERNSHIP"> <textbox name="FIRST_INTERNSHIP"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#finding-jobs" aria-expanded="false" aria-controls="finding-jobs">How Do I Find Jobs?</a></li>
+          <div class="collapse" id="finding-jobs"> <br>
+            <div class="card card-body">
+              <strong>How Do I Find Jobs?</strong> <br>
+              <div id="FINDING_JOBS"> <textbox name="FINDING_JOBS"></textbox> </div>
+            </div>
+          </div>
+        </ul>
+      </section> <br> <h3></h3> <h3></h3> <br>
+
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2> <br>
+        <ul style="list-style-type:none">
+          <li><a data-toggle="collapse" href="#hons" aria-expanded="false" aria-controls="hons">The Difference From Honours and Non-Honours</a></li>
+          <div class="collapse" id="hons"> <br>
+            <div class="card card-body">
+              <strong>The Difference From Honours and Non-Honours?</strong> <br>
+              <div id="HONOURS"> <textbox name="HONOURS"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#bsc" aria-expanded="false" aria-controls="bsc">Bachelors of Art or Science?</a></li>
+          <div class="collapse" id="bsc"> <br>
+            <div class="card card-body">
+              <strong>Bachelors of Art or Science?</strong> <br>
+              <div id="BA_BSC"> <textbox name="BA_BSC"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#pacing" aria-expanded="false" aria-controls="pacing">How Should I Pace Myself?</a></li>
+          <div class="collapse" id="pacing"> <br>
+            <div class="card card-body">
+              <strong>How Should I Pace Myself?</strong> <br>
+              <div id="PACING"> <textbox name="PACING"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#grad" aria-expanded="false" aria-controls="grad">Worried About Not Graduating "on Time?"</a></li>
+          <div class="collapse" id="grad"> <br>
+            <div class="card card-body">
+              <strong>Worried About Not Graduating "on Time?"</strong> <br>
+              <div id="GRADUATING_TIME"> <textbox name="GRADUATING_TIME"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#york" aria-expanded="false" aria-controls="york">Is York a Good School for Computer Science?</a></li>
+          <div class="collapse" id="york"> <br>
+            <div class="card card-body">
+              <strong>Is York a Good School for Computer Science?</strong> <br>
+              <div id="YORK_GOOD"> <textbox name="YORK_GOOD"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#mathz" aria-expanded="false" aria-controls="mathz">How Much Math Is in Computer Science?</a></li>
+          <div class="collapse" id="mathz"> <br>
+            <div class="card card-body">
+              <strong>How Much Math Is in Computer Science?</strong> <br>
+              <div id="CS_MATH"> <textbox name="CS_MATH"></textbox> </div>
+            </div>
+          </div>
+        </ul>
+      </section> <br> <h3></h3> <h3></h3> <br>
+
+      <section id="author">
+        <h2>About Author</h2> <br>
+        <ul style="list-style-type:none">
+          <li><a data-toggle="collapse" href="#me" aria-expanded="false" aria-controls="me">About Me</a></li>
+          <div class="collapse" id="me"> <br>
+            <div class="card card-body">
+              <strong>About Me</strong> <br>
+              <div id="ME"> <textbox name="ME"></textbox> </div>
+            </div>
+          </div> <br>
+
+          <li><a data-toggle="collapse" href="#path" aria-expanded="false" aria-controls="path">My University Career</a></li>
+          <div class="collapse" id="path"> <br>
+            <div class="card card-body">
+              <strong>My University Career</strong> <br>  <!-- not making a Vue component for this because it's long as shit + components don't preserve formatting like <br> and <ul><li> etc. -->
+              <p class="coursetext">
+                I feel like sharing my university career will be beneficial because I did not have a very conventional path. I decided midway through my degree that I wanted to drop from the honours program, I took
+                about 20 months off of school to do five internship back to back to back to back to back, and overall it was just...different than how most people do university. I just want to show whoever is reading
+                this that you don't have to approach university how you 'think' it should be done -- things changes, everyone's situation is unique, and more. For context, I graduated from high school June 2017 and
+                had no idea what I wanted to study in university. I knew that I was expected to go to university by my family (and I guess it's just the 'assumption' or 'generic' route people take after graduating high
+                school) and I originally thought about majoring in chemistry since it's what I excelled at in high school. My high school didn't offer computer science courses at the time so I never even really got
+                to explore if computer science was my thing or not. I applied to chemistry, but on a whim I decided to apply to computer science, I have no idea why I did, I literally just did it. No divine relevation
+                or anything, but my gut feeling just told me apply. I got accepted into computer science, never wrote a single line of code before, had no idea what it was about, but I just felt like it was right for me
+                so I accepted my offer to study computer science at York University, and started September 2017. So, here's basically the last four years of my life. Note, this will be really long. <br> <br>
+
+                <ul>
+                  <li> <strong>Fall 2017:</strong> took EECS1001, EECS1012, MATH1300, CHEM1000, POLS1000. I was just getting adjusted to university life. Made a few friends (who I'm still friends with to this day -- hi Leo and Dan),
+                    and focused mainly on school. I breezed through high school without having to study, so the change of environment was hard. I ended this semester with a Pass, A, C+, and A. POLS was year long. </li> <br>
+                  <li> <strong>Winter 2018:</strong> took EECS1019, EECS1022, MATH1310, CHEM1001, POLS1000. This was a really hard semester since I had the misfortunate of grouping really hard courses together, and having the worst
+                    professor in each of the classes without realizing it. I ended up having to drop MATH1310 and CHEM1001. I remember I went to one of the Lassonde academic advisors to ask for advice and the person I talked to
+                    suggested that I drop out of computer science, and that chemistry was better for me since I had an A in CHEM1000 and got a D+ in EECS1019. I actually almost did, but I stayed in out of spite. I ended this semester
+                    with a D+, C, dropped, dropped, and B+. </li> <br>
+                  <li> <strong>Summer 2018:</strong> you know how in high school when it's summer break, you get to enjoy your life for a few months before school starts again? I was thinking that's also how it worked in university, so I
+                    didn't make this summer too productive (which is an error my part, more on that later). I decided to take one course though, CHEM1001, and got an A. I also got my G2 license this summer, which was cool. </li> <br> <br>
+                  <li> <strong>Fall 2018:</strong> second year, cool. Had an enjoyable first year, couldn't complain. I was behind a bit though, I should've taken MATH1310 but I didn't. I took EECS2001, EECS2030, MATH1310, MATH1090,
+                    and MODR1770. Got my ass kicked in MATH1310 again, so I dropped it again. Rest of the courses were fine, and ended the semester with a C+, B, dropped, B, and MODR was year long. </li> <br>
+                  <li> <strong>Winter 2019:</strong> probably my hardest semester. I felt really behind all my peers in computer science classes, I couldn't 'get' concepts as fast as other people who were programming since high school, and
+                    overall this semester was really bad for my mental. I took EECS2011, EECS2021, EECS2031, and MODR1770. I got a D, A, D+, and A respectively, but those two Ds put me really close to academic probation (4.6 GPA). </li> <br>
+                  <li> <strong>Summer 2019:</strong> winter semester was pretty depressing and dropped my GPA significantly. When summer came I decided to stop moping about it and get my shit together, so I took bought an online Python course
+                    so I could learn how to code better, spent the summer writing a few personal projects and putting them on my GitHub, and I retook three courses this summer: EECS1019, EECS2011, and MATH1300. I also took HUMA2200, public
+                    speaking, which actually ended up being my favourite course and one that taught me a lot. I turned a 2 Ds and a C to 2 As and a B+ that summer, and got an A in HUMA2200.  I made a lot of new friends in my summer courses,
+                    worked a part time student IT job where I made even more friends, and overall it was an awesome and productive summer where I grew and matured a lot. I raised my GPA from a 4.6 to a 6.1, which was just barely high enough to
+                    admit me into the Lassonde internship program (needed a 6.0 minimum). </li> <br> <br>
+                  <li> <strong>Fall 2019:</strong> starting third year now. Took EECS3000, EECS3311, EECS3421, and ANTH3040. EECS3311 was a nightmare and dropped it. I got a C, dropped, B+, and ANTH was year long. I also went to my first
+                    hackathon this semester, Hack the North 2019. This is the largest hackathon in Canada, and it takes place at the University of Waterloo. So far up to this point, I had no relevant job experience. I didn't know a thing about
+                    co-ops or internships, but when I got to Hack the North it opened my eyes. In my group, there was a bunch of Waterloo students who were talking about they just finished their summer internship at Google, Microsoft, Facebook,
+                    and more. I'm pretty sure at the time they were just flexing on me, but it really inspired me because I didn't know students can take time from school and go work at these large tech companies. I vowed to get my first internship
+                    that summer, so I joined the Lassonde internship program. I registered, went to all their workshops, and got access to their job portal. Applied to around 75 places this fall, no responses except from IBM, which I failed the OA.
+                    Tough shit. I didn't know what "LeetCode" was or what an "OA" was, I didn't have anyone to guide me through this, since honestly, all my classmates were in the same boat. We all knew getting job experience was important but
+                    how do we prepare? How do we study and get better? We were all trying to figure it out together. </li> <br>
+                  <li> <strong>Winter 2020:</strong> nightmare semester. I took EECS3311, EECS3482, ENG1600, and ANTH3040. Relatively light courseload, but trying to juggle applying to internships, doing LeetCode to practise, making side projects
+                    to slap on your resume and get noticed - it was really overwhelming. Navigating recruitment season is so hard, especially if you're doing it blind and without guidance. I sent maybe 200 applications and heard nothing back. All the
+                    jobs I applied to on the Lassonde portal was doing nothing for me. I got my resume reviewed by one of the Lassonde academic advisors 3-4 times and even they were baffled why I wasn't hearing anything back. I was applying viciously
+                    all of January, February, and March...and it wasn't until the end of March I got an email from CaseWare asking me to take their OA. I took the OA, got invited to an interview. I was scared. I was praying. I took the interview a week
+                    after the OA, and I did really well. 10 minutes after I left the CaseWare office, I got an email saying they'd like to extend me a software engineer internship that summer. Fuck it, goal was completed, all that blood, sweat, and tears
+                    (literal tears - I actually did have break downs from the stress) was worth it! I was able to focus on school for the rest of the semester and ended with a B+, A, Pass, and B+. Oh also, this was when the COVID-19 pandemic started
+                    picking up. Around April, school and exams went remote. It was a pretty nice break, and made for easy exams. </li> <br>
+                  <li> <strong>Summer 2020:</strong> so, this was the summer I was supposed to be doing my first internship at CaseWare, right? Well, because of COVID-19, half the interns they extended offers to got their offer rescinded...which I was
+                    one of. You know why this was especially shitty? I got the email saying they were rescinding my offer two weeks before I was supposed to begin, giving me no time to find another internship, and I actually /declined/ interviews at
+                    other companies because I had already signed an offer at CaseWare. Things were looking pretty grim, but there was this program I saw advertised around called the MLH Fellowship by Major League Hacking. It was an internship where you
+                    work on open source software, and it was oriented towards students who lost their job because of the COVID-19 pandemic. I applied, got an interview, passed it, and I got this internship miraculously last minute. In the middle of this
+                    internship, CaseWare reached out to me asking if I wanted to intern with them during the fall, and I said okay. I signed an 8 month contract, so I'd be with them the upcoming fall and upcoming winter semesters. </li> <br> <br>
+                  <li> <strong>Fall 2020:</strong> my fourth year. I took time off school to be interning with CaseWare, since I wanted more work experience. I was on a frontend team and I hate frontend, so I wasn't particularly enjoying my time
+                    working here. While interning here I kept applying to more internships, and I got a job at MDA Space for the winter semester...so I told CaseWare I'd be breaking my contract and leaving the company early. They were okay with it,
+                    they understood, but Lassonde was very upset with me, saying I was unprofessional and ruining the school's reputation with the comapany. Call me selfish, but I didn't really care. I was just looking out for myself and what was
+                    best for me. </li> <br>
+                  <li> <strong>Winter 2021:</strong> I moved to Halifax with one of my friends who also got the job at MDA Space, and we lived together. It was a fun time. I wasn't content with CaseWare and MDA Space on my resume, though. I wanted
+                    bigger names. Back in November I got an invitation from Amazon to take their OA. I did 5-6 hours of LeetCode a day, followed a bunch of subreddits for CS majors, and connected with a bunch of people and joined many online communities.
+                    This was the point in time I found the 'CS Majors' and 'cscareers.dev' Discord servers, staples of any CS student. It did affect my performance at work, but I was doing LeetCode religiously everyday because I had an interview
+                    in February after passing Amazon's three stage OA. I took the interview and passed, so now I was en route to working at Amazon in the summer. Around March, I got an interview with Shopify, and I ended up getting the job offer as
+                    well for the summer...but I already signed an offer with Amazon. Not wanting to pass up the opportunity, I asked if the offer could be moved to the fall semester, and they said yes. Now I was also en route to working at Shopify
+                    in the fall - this would be my 5th internship in a row now. </li> <br>
+                  <li> <strong>Summer 2021:</strong> I worked at Amazon, and finally took MATH1014. I got a C+. I worked remotely from home for Amazon since COVID-19 was still fucking shit up, but I did take a one week trip to Vancouver to hang out with
+                    my friends who were working there. I met a bunch of other interns (not just from Amazon, but also LinkedIn and Microsoft!) and had a really good time. We went to the beach and went drinking every other day. It made me really sad I didn't
+                    choose to work hybrid, since Amazon gave the option of that or to work fully remote. After taking that trip to Vancouver, I really wish I worked over there instead. Oh well. </li> <br> <br>
+                  <li> <strong>Fall 2021:</strong> start of my fifth year. At this point in time I already decided I'd drop from the 4 year honours program to the 3 year regular program, so I've effectively taking 5 years now and I still don't have
+                    my degree for what's supposed to be a 3 year program. I think I definitely took too many internships, but with each recruiting season I went through I ended up learning a lot, making new connections, and expanding my network. I worked
+                    at Shoipfy and had a good time. It was also remote which sucked, but oh well. At this point in time, I was 75.0 / 90.0 credits done for my degree, so I just needed 5 more until I graduate. I did end up applying to jobs again during my
+                    Shopify term, but this time to both new grad and internship roles. The idea was that I'd apply to new grad roles at some companies, but other companies I applied to internship roles, because their new grad interviews were much harder
+                    and I could 'game' the system a bit. See, a new grad interview cycle at Facebook is ~5 stages. An intern interview cycle is 2 stages. So, if you want to new grad at Facebook, you can intern there first, and get a new grad return offer
+                    if your team likes you, and skip over new grad interviews if you don't feel confident in your skills to pass them. Speaking of Facebook, I applied and got an offer to intern there next summer, woohoo. </li> <br>
+                  <li> <strong>Winter 2022:</strong> taking my final courses this semester, EECS3101, EECS3221, PHYS1470, and STS3600. Technically done my degree by the end of this semester, all 90.0 / 90.0 credits. I won't be taking my convocation
+                    ceremony in June though, I'm going to delay it to October. </li> <br>
+                  <li> <strong>Summer 2022:</strong> I'll be at Facebook. Hopefully if COVID-19 calms down a bit (currently omicron is fucking the world up right now) I'll be living in Seattle. </li> <br> <br>
+                  <li> <strong>TL;DR:</strong> (first year) F17 school -> W18 school -> S18 school -> (second year) F18 school -> W19 school -> S19 school -> (third year) F19 school -> W20 school -> S20 MLH Fellowship + TAing for EECS1012 -> (fourth year)
+                    F20 CaseWare -> W21 MDA Space -> S21 Amazon -> (fifth year) F21 Shopify -> W22 last semester + graduation -> S22 Facebook -> F22 new grad applying -> W23 aiming to start my new grad job January 2023. </li>
+                </ul>
+              </p>
+            </div>
+          </div> <br>
+          <p style="text-align:right;"> Found this guide useful? Star it on <a class="a-special" target="_blank" href="https://github.com/chrisngyn/LCSUG">GitHub</a>! // Last updated on 01/09/2022. </p>
+        </ul>
+      </section>
     </div>
-  </div>
-
-  <br>
-
-  <div data-spy="scroll" data-target="#navbar" data-offset="0">
-    <section id="curriculum">
-      <h2>Computer Science Curriculum</h2>
-      <br>
-      <ul style="list-style-type:none">
-
-        <li><a data-toggle="collapse" href="#YEAR1" aria-expanded="false" aria-controls="YEAR1">Year 1 Core</a></li>
-
-        <ul class="specialUL" style="list-style-type:none">
-          <div class="collapse" id="YEAR1">
-            <br>
-            <div class="card card-body">
-
-              <li><a data-toggle="collapse" href="#Y1course1" aria-expanded="false" aria-controls="Y1course1">EECS1001 - Research Directions in Computing</a></li>
-              <div class="collapse" id="Y1course1">
-                <br>
-                <div class="card card-body">
-                  <strong>Research Directions in Computing - 1.00 credit</strong><br>
-                  <p class="coursetext">
-                    This course is about some of the possible research topics in the realm of computer science. The topics and lectures vary every year. If you want to go
-                    into research in the future, you'll enjoy this class.<br><br>
-                    This is definitely the easiest (and arguably tedious) course you'll take. It's pass or fail, so no grade is received. To pass, you need to attend the classes and
-                    do the quizzes that are at the end of every lecture, with the occasional assignment strewn throughout the course.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - one of the easiest course in the degree. You'll have a good time.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y1course2" aria-expanded="false" aria-controls="Y1course2">EECS1012 - Introduction to Computing: A Net-centric Approach</a></li>
-              <div class="collapse" id="Y1course2">
-                <br>
-                <div class="card card-body">
-                  <strong>Introduction to Computing: A Net-centric Approach - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    This is an introductory programming course. You'll learn the fundamentals, such as what variables are, beginner programming logic (conditional logic,
-                    loops, program tracing), and the basics of web development.<br><br>
-                    You'll be working with HTML, CSS, and JavaScript in this course. If you did any programming on your own / in high school, this will be a walk in the park.
-                    If you didn't, you can still end with a high grade as long as you put in the time and effort needed (which is minimal). This course is definitely on the
-                    easier side of the spectrum.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - if you're a first time programmer then make sure you learn and understand basics of programming, else, this will be easy for you.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y1course3" aria-expanded="false" aria-controls="Y1course3">EECS1019 - Discrete Mathematics for Computer Science</a></li>
-              <div class="collapse" id="Y1course3">
-                <br>
-                <div class="card card-body">
-                  <strong>Discrete Mathematics for Computer Science - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    Discrete math is not like your average mathematics such as advanced functions or calculus. This is about the math that is related and necessary in computer
-                    science and includes topic like logic, Boolean algebra, set theory, and more.<br><br>
-                    I found the first half of this course to be pretty easy (logic, Boolean algebra, and set theory) but it definitely ramped up when we started doing proofs, induction,
-                    counting principles, and more. This is a pretty abstract course and <i>can</i> be difficult to wrap your head around all the concepts, so some attention is needed.<br><br>
-                    <a class="special-link" href="https://www.youtube.com/playlist?list=PLl-gb0E4MII0L5lz8uQ8j5aSFQQHoAzXx" target="_blank">This</a> playlist on YouTube saved my grade.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - one of the more challenging first year courses with an easy first half with a harder second half. Don't take this with MATH1310.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y1course4" aria-expanded="false" aria-controls="Y1course4">EECS1022 - Programming for Mobile Computing</a></li>
-              <div class="collapse" id="Y1course4">
-                <br>
-                <div class="card card-body">
-                  <strong>Programming for Mobile Computing - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    A more ramped up version of EECS1012. Instead of web development, you'll be making mobile apps using Java and Android Studio. This would be a good time to mention that Java
-                    is the "main" language York teaches in; you'll have another 3-4 courses to take that uses Java.<br><br>
-                    I found this course to be fun, although definitely more challenging. I remember having problems not only picking up Java for the first time, but also having to learn how
-                    to use the Android Studio IDE. It's important to leave this course knowing Object-Oriented Programming (OOP) concepts.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - if you've programmed before in any OOP language you'll be fine. Otherwise, take this course seriously and learn how to program in Java; we use it a lot.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y1course5" aria-expanded="false" aria-controls="Y1course5">MATH1300 - Differential Calculus with Applications</a></li>
-              <div class="collapse" id="Y1course5">
-                <br>
-                <div class="card card-body">
-                  <strong>Differential Calculus with Applications - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    This is Calculus I - mainly derivatives with some integrals near the end. If you did well in calculus in high school, you'll find majority of this course content to be
-                    similar, with the newer content not being that much more challenging.<br><br>
-                    If you struggled with calculus in high school, you'll most likely struggle here too. Read the textbook; it really helped in my opinion. I also used
-                    <a class="special-link" href="http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx" target="_blank">this</a> website a lot.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - good at calculus in high school? Good. No? Gonna have to work hard.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y1course6" aria-expanded="false" aria-controls="Y1course6">MATH1310 - Integral Calculus with Applications</a></li>
-              <div class="collapse" id="Y1course6">
-                <br>
-                <div class="card card-body">
-                  <strong>Integral Calculus with Applications - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    This is Calculus II - which is entirely about integrals. If you found calculus I to be easy, don't think that this course is anything like it. There is an insane ramp
-                    in difficulty between these two courses and a lot of difficult content. I recommend you pay a lot of attention and follow the textbook closely.
-                    <a class="special-link" href="http://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx" target="_blank">This</a> website helped a lot.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - I hope you're good with integrals. I would say this is one of the hardest first year courses, and recommend not doing this with EECS1019.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y1course7" aria-expanded="false" aria-controls="Y1course7">Foundational Science Requirement</a></li>
-              <div class="collapse" id="Y1course7">
-                <br>
-                <div class="card card-body">
-                  <strong>Foundational Science Requirement - 6.00 credits total (for B.Sc students only)</strong><br>
-                  <p class="coursetext">
-                    You need to take 6.00 credits in sciences from a list of courses. Typically this means either two biology, two chemistry, one biology and one chemistry,
-                    or one physics course (biology and chemistry courses are 3.00 credits while physics is a 6.00 credit).<br><br>
-                    I went with two chemistries (CHEM1000, CHEM1001) since I excelled in it in high school. Play to your strengths and what you did well in during high school.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - I can't speak for biology or physics, but I found the chemistry route to be enjoyable.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y1course8" aria-expanded="false" aria-controls="Y1course8">Electives</a></li>
-              <div class="collapse" id="Y1course8">
-                <br>
-                <div class="card card-body">
-                  <strong>Electives</strong><br>
-                  <p class="coursetext">
-                    You need 90 credits for the regular degree, and 120 credits for the honours. The computer science, science, and mathematics requirement don't fill it completely, so you'll be taking
-                    electives here and there.<br><br>
-                    You can view taking electives in your first year in one of two ways: since first year courses are the easiest, this would be a great opportunity to take a few
-                    electives alongside them. On the otherhand, if you are unsure how you'd fair in university and just want to gauge your performance, don't worry about taking any.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - personally, I advise against taking an elective in your first year since you should use it to gauge how difficult you find university and to set good habits,
-                    but some electives I've taken are MODR1770, GEOG2030, and STS2411. If you feel comfortable, take an elective or two since first year courses <i>are</i> the easiest.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </ul>
-
-        <br>
-
-
-        <li><a data-toggle="collapse" href="#YEAR2" aria-expanded="false" aria-controls="YEAR2">Year 2 Core</a></li>
-
-        <ul class="specialUL" style="list-style-type:none">
-          <div class="collapse" id="YEAR2">
-            <br>
-            <div class="card card-body">
-
-              <li><a data-toggle="collapse" href="#Y2course1" aria-expanded="false" aria-controls="Y2course1">EECS2001 - Introduction to the Theory of Computation</a></li>
-              <div class="collapse" id="Y2course1">
-                <br>
-                <div class="card card-body">
-                  <strong>Introduction to the Theory of Computation - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    This course is intense on computing theory, and includes topics like automata theory, Turing machines, formal languages, and more. If these words don't make sense to
-                    you, it didn't make sense to me either. This is really abstract and a theory heavy course, and I found this to be my least favourite second year course. It did have
-                    its moments when it was really interesting, but it was also mostly hard and perplexing. Definitely urge you to pay attention in your lectures.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - the most abstract and theory heavy course in second year. Listen in class, or you'll spiral further down this hill of constantly being behind.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y2course2" aria-expanded="false" aria-controls="Y2course2">EECS2011 - Fundamentals of Data Structures</a></li>
-              <div class="collapse" id="Y2course2">
-                <br>
-                <div class="card card-body">
-                  <strong>Fundamentals of Data Structures - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    Arguably the <strong>most important second year course</strong> alongside EECS2030. It's important to master data structures because these concepts, alongside
-                    algorithms, is usually the area you are tested on in your programming interviews. I definitely got carefree the first time I took this course and ended with a D, but I took
-                    it again and got an A. Easy beginning, but definitely ramps up once you start trees, graphs, and sorting algorithms.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - take this course seriously! Make sure you really, really, REALLY learn these concepts to a tee. Even after this course, keep practising and practising your
-                    data structures. Go on HackerRank or LeetCode, and keep learning and refining your skills.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y2course3" aria-expanded="false" aria-controls="Y2course3">EECS2021 - Computer Organization</a></li>
-              <div class="collapse" id="Y2course3">
-                <br>
-                <div class="card card-body">
-                  <strong>Computer Organization - 4.00 credits</strong><br>
-                  <p class="coursetext">
-                    Definitely a really unique course. While most people find this course annoying and useless, I actually found it interesting. You'll be learning about computer
-                    architecture, and working with low-level assembly languages like RISC-V and Verilog. I still haven't used RISC-V or Verilog a day in my life since I took this course,
-                    but it was still interesting to me nonetheless. Definitely has a heavy workload though, for sure.<br><br>
-                    It's important to note that this is a <strong>4.00 credit</strong> course, so it weighs more heavily on your GPA than a 3.00 credit course would. If you're looking for an
-                    opportunity to raise your GPA a bit, getting an A / A+ in this course would help.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - can't say I've found much practical use for this course in my life, but if you want to go into low-level programming work or engineering roles, maybe
-                    this would help you more if you knew these languages well. Heavy workload, don't recommend taking this alongside EECS2011.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y2course4" aria-expanded="false" aria-controls="Y2course4">EECS2030 - Advanced Object Oriented Programming</a></li>
-              <div class="collapse" id="Y2course4">
-                <br>
-                <div class="card card-body">
-                  <strong>Advanced Object Oriented Programming - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    I consider two courses to be the fundamentals of second year: which is EECS2011, and this course, EECS2030. This is a Java course that goes into a lot of depth about Object-Oriented Programming.
-                    The reason why I stress this is an important course is because this will ultimately help you to write better code as a developer. Plus, you'll be asked about OOP concepts in interviews.<br><br>
-                    I enjoyed this course a lot, and it has a relatively lighter workload compared to other second year courses.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - important and fundamental course with a relatively light workload. Despite this, spend ample amount of time learning the concepts.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y2course5" aria-expanded="false" aria-controls="Y2course5">EECS2031 - Software Tools</a></li>
-              <div class="collapse" id="Y2course5">
-                <br>
-                <div class="card card-body">
-                  <strong>Software Tools - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    Your first C course. I found this one to be a little challenging because I was so used to languages like Java and Python, and C was like new territory for me. You will spend a lot of time
-                    learning C, but also how to use a bunch of Linux commands, Bash scripting, and more.<br><br>
-                    Have you been using Windows or Mac your whole time to program? Well now you'll be programming in an environment called Linux. Have you gotten used to hitting "run" in Android Studio or Eclipse
-                    when programming in Java? Well now you'll learn how to compile and run C programs in a terminal!</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - in my opinion a challenging course, but to others an easy one. Can't give a solid statement on this, but learn C ahead of time if you're worried about this class.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y2course6" aria-expanded="false" aria-controls="Y2course6">MATH1090 - Introduction to Logic for Computer Science</a></li>
-              <div class="collapse" id="Y2course6">
-                <br>
-                <div class="card card-body">
-                  <strong>Introduction to Logic for Computer Science - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    The follow-up to EECS1019. I found this course to be a lot easier. It's still a lot of logic, but less on the mathematical side in terms of number theory, counting principles, set theory,
-                    etcetera. It's more abstract, logical concepts instead and with a lot more proofs.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - not much to say about this course other than just need to get it over with. Not too difficult unless you have a hard time wrapping your head around theory and abstract concepts.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y2course7" aria-expanded="false" aria-controls="Y2course7">MATH2030 - Elementary Probability</a></li>
-              <div class="collapse" id="Y2course7">
-                <br>
-                <div class="card card-body">
-                  <strong>Elementary Probability - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    Note! If you are deciding to <strong>not</strong> do your honours, then you do not have to take this course! If you are in the honours, you will have to take this.<br><br>
-                    I haven't taken this course yet - so what I say here is coming from the opinions of my other friends who <i>have</i> taken this.<br><br>
-                    This course is as the title suggests - about calculating probability. I hope you learned a lot in MATH1310 (calculus II) because integrals make a return here. Math and theory heavy
-                    course with a hefty workload. Wouldn't recommend doing this alongside other hard courses.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - pretty tough course unless you love math and are great with integrals. Don't pair this alongside other hard courses.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y2course8" aria-expanded="false" aria-controls="Y2course8">Electives</a></li>
-              <div class="collapse" id="Y2course8">
-                <br>
-                <div class="card card-body">
-                  <strong>Electives</strong><br>
-                  <p class="coursetext">
-                    Read Year 1 Core --> Electives. If you didn't take any electives in your first year, now would be a good time to take one or two.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - if you didn't take one in first year, consider taking one or two now. But remember, take courses as you can. Don't rush and overwhelm yourself.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </ul>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#YEAR3" aria-expanded="false" aria-controls="YEAR3">Year 3 Core</a></li>
-
-        <ul class="specialUL" style="list-style-type:none">
-          <div class="collapse" id="YEAR3">
-            <br>
-            <div class="card card-body">
-
-              <li><a data-toggle="collapse" href="#Y3course1" aria-expanded="false" aria-controls="Y3course1">EECS3000 - Professional Practice in Computing</a></li>
-              <div class="collapse" id="Y3course1">
-                <br>
-                <div class="card card-body">
-                  <strong>Professional Practice in Computing - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    Note! If you are deciding to <strong>not</strong> do your honours, then you do not have to take this course! If you are in the honours, you will have to take this.<br><br>
-                    This course is about ethics in computer science. You'll be doing a lot of article readings and writing essays in this one - no coding whatsoever. When I took this, there was six short papers
-                    and two longer essays. The exam for this class is <strong>brutal</strong>.<br><br>
-                    I didn't really like this course too much because I'm not the best writer, and it felt a little subjective. I couldn't really tell what constitutes a good essay and I kept getting 60-70s on my
-                    assignments, and ended with a C in the class.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - despite there not being any coding, this is still a tough course because most people just write it off. You <i>could</i> squeak by with a C or a C+ by doing
-                    the bare minimum readings and skipping all the lectures, but if you want that A you'll have to put in a lot of effort.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y3course2" aria-expanded="false" aria-controls="Y3course2">EECS3101 - Design and Analysis of Algorithms</a></li>
-              <div class="collapse" id="Y3course2">
-                <br>
-                <div class="card card-body">
-                  <strong>Design and Analysis of Algorithms - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    I would consider this course to be the most important third year course. This one is all about algorithms, but not just that, <i>efficient</i> algorithms.<br><br>
-                    Imagine you had a program that executed in 10 minutes on an input of say, 100 size (arbitrary units). Imagine as you scale the input higher and highier, say to 1,000 and
-                    10,000, then your execution time would take significantly longer. Now imagine you could write a more efficient program that executed 100x faster - that's why this course is
-                    important. Extremely heavy courseload, its fair share of theory, and a lot of math is involved. I hope you know your big-O notation well!</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - take this course seriously. Very important, and also boasts an incredibly heavy workload.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y3course3" aria-expanded="false" aria-controls="Y3course3">EECS3311 - Software Design</a></li>
-              <div class="collapse" id="Y3course3">
-                <br>
-                <div class="card card-body">
-                  <strong>Software Design - 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    Oh boy...this course.<br><br>
-                    My friends and I joke about this a lot. We nicknamed it, "The Gatekeeper" since it holds so many people back from graduation. It's less on the difficulty scale, but there's just an
-                    insane amount of work, and the thing that sucks a lot, is you feel so demotivated because you can't figure out <i>why</i> you're doing this.<br><br>
-                    Let me clarify. This course is about software design - how to structure and design your code properly so it's more efficient, readable, and more. But the thing is, York University
-                    insists on using an ancient language called Eiffel. You're going to spend four months programming in this language just to never use it again, is what I've found. That's the reason I
-                    personally felt so drained and demotivated - the concepts were important, but you aren't forced to just learn the concepts! You have to learn an entirely new language, which takes away
-                    from the <i>primary</i> purpose of this course: to learn software design patterns.<br><br>
-                    The material is important. The concepts are important. What you learn is important and will make you a better developer if you know how to apply them. But, it's just poor execution on
-                    the school's part. Although, try your hardest in this course to scrape by. At the end of the day, make sure you walk away knowing what design patterns are, the common ones, and how to
-                    implement them (in more modern languages too, like Java).</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - insanely difficult course. Not due to material, but the workload. Learning a new language, how to use the Eiffel Studio IDE, and all the theory is tough. Absolutely
-                    do not take this course at the same time as EECS3101 or EECS3221, that would be a suicide mission.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y3course4" aria-expanded="false" aria-controls="Y3course4">EECS3215 (Embedded Systems) or EECS3221 (Operating System Fundamentals)</a></li>
-              <div class="collapse" id="Y3course4">
-                <br>
-                <div class="card card-body">
-                  <strong>EECS3215 (4.00 credits) or EECS3221 (3.00 credits)</strong><br>
-                  <p class="coursetext">
-                    This is your choice between EECS3215 (Embedded Systems) or EECS3221 (Operating System Fundamentals). Although, you really don't have much of a choice. You're going to end up taking EECS3221.<br><br>
-                    Why? By the time you take this course, you'll have all the prerequisites to take EECS3221. You will most likely never have the prerequisites done for EECS3215, because it needs EECS3201, which
-                    needs EECS2200...etcetera. Courses you don't have to take, so you most likely never will.<br><br>
-                    This course is about operating systems, and is another C course. This course has a pretty tough workload, so I suggest not doing it at the same time as EECS3101 or EECS3311, if it can be helped.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - another C course with a heavy workload. Hope you know how to program in C well.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y3course5" aria-expanded="false" aria-controls="Y3course5">EECS3401 (Introduction to Artificial Intelligence), EECS3421 (Introduction to Database Systems), or EECS3461 (User Interfaces)</a></li>
-              <div class="collapse" id="Y3course5">
-                <br>
-                <div class="card card-body">
-                  <strong>EECS3401, EECS3421, or EECS3461 - all are 3.00 credits</strong><br>
-                  <p class="coursetext">
-                    This is your choice between EECS3401 (Introduction to Artificial Intelligence), EECS3421 (Introduction to Database Systems), or EECS3461 (User Interfaces). Unlike EECS3215 and EECS3221, you
-                    actually get to choose here!<br><br>
-                    So, I went with the EECS3421 route (databases). I really enjoyed it, found it extremely useful, and honestly I gained so much value from this course. As soon as this course was over, I went back
-                    to a few of my personal projects and revamped them, incorporating them with a database and making them much more sophisicated. If you also take this course, you'll be learning topics like
-                    relational algebra, SQL, ER diagrams, and more. Not all professors will cover this, but we went over SQL security and SQL injections, which was a lot of fun!<br><br>
-                    Remember you aren't limited to taking only one of these options. You can do more from this list if you wanted. I can't speak on the other courses since I haven't taken them, but I can vouch
-                    that databases was really useful, fun, and the workload was decent.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - I took EECS3421. Fun and important course to being a developer with a decent workload. Can't speak on the other two courses.</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y3course6" aria-expanded="false" aria-controls="Y3course6">Electives</a></li>
-              <div class="collapse" id="Y3course6">
-                <br>
-                <div class="card card-body">
-                  <strong>Electives</strong><br>
-                  <p class="coursetext">
-                    Read Year 2 Core --> Electives. At this point in time you should have a few electives already done.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - again, take more as needed, but remember to not overwhelm yourself. Core courses come first, electives later. I took ANTH3040 in my third year, which is a
-                    6.00 credit <i>fully online</i> course and walked away with a B+. A lot of reading and writing, though.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </ul>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#YEAR4" aria-expanded="false" aria-controls="YEAR4">Year 4 Core</a></li>
-
-        <ul class="specialUL" style="list-style-type:none">
-          <div class="collapse" id="YEAR4">
-            <br>
-            <div class="card card-body">
-
-              <li><a data-toggle="collapse" href="#Y4course1" aria-expanded="false" aria-controls="Y4course1">EECS4XXX</a></li>
-              <div class="collapse" id="Y4course1">
-                <br>
-                <div class="card card-body">
-                  <strong>EECS4XXX - 12.0 credits total</strong><br>
-                  <p class="coursetext">
-                    Note! If you are deciding to <strong>not</strong> do your honours, you don't have to fulfill this requirement.<br><br>
-                    So, jokes on you. There is no "4th year core". This is when you choose your own 4th year courses and decide what you are interested in and want to specialize in further.
-                    There are no mandatory 4th year courses to take, but you need to have at least 12.0 credits of EECS4XXX courses.<br><br>
-                    This is actually one of the biggest selling points why people will drop out of the honours and do the regular degree - if they can't find any 4th year courses they like, or
-                    just want to get out of school sooner, then they simply just <i>won't</i> take a fourth year.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - no mandatory fourth year courses. Look through the selection and take what you're interested in. If you're in honours, then you need a minimum of 12.0
-                    credits, but can take as many as you like!</p>
-                </div>
-              </div>
-
-              <br>
-
-              <li><a data-toggle="collapse" href="#Y4course2" aria-expanded="false" aria-controls="Y4course2">Electives</a></li>
-              <div class="collapse" id="Y4course2">
-                <br>
-                <div class="card card-body">
-                  <strong>Electives</strong><br>
-                  <p class="coursetext">
-                    Read Year 3 Core --> Electives. At this point in time you should have most of your elective requirements already done.</p><br>
-                  <p class="coursetext">
-                    <strong>tl;dr</strong> - take whatever else you need to get to your 90 or 120.0 credit mark, then you're free.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </ul>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#other" aria-expanded="false" aria-controls="other">Other Requirements</a></li>
-        <div class="collapse" id="other">
-          <br>
-          <div class="card card-body">
-            <strong>Other Requirements</strong><br>
-            <p class="coursetext">
-              There are a lot of other requirements that are sprinkled into getting the degree that occasionally get overlooked. For example...<br><br>
-              -if you're in honours, you need to have 12.0 credits in the EECS4XXX level<br>
-              -you need 42 credits at the 3XXX level or higher<br>
-              -you need 30 credits outside of computer science, mathematics, statistics, and information technology (ITEC) courses<br>
-              -you need 24 credits in the science disciplines<br>
-              -you need 3.00 credits in a 2XXX level science (which is typically fulfilled by MATH2030 if you're in honours)<br><br>
-              And a lot more. I won't list all of them, but make sure you hound your Degree Progress Report (DPR) tool a lot and meet with academic advisors every so often to
-              stay on top of things and make sure you aren't missing any requirements.</p><br>
-            <p class="coursetext">
-              <strong>tl;dr</strong> - lots of requirements strewn across your degree. Check with academic advisors and the DPR tool regularly, but most importantly <strong>READ YOUR ACADEMIC CALENDAR</strong>.</p>
-          </div>
-        </div>
-    </section>
-
-    <br>
-    <h3></h3>
-    <h3></h3>
-    <br>
-
-    <section id="misc">
-      <h2>Miscellaneous & General Tips</h2>
-      <br>
-      <ul style="list-style-type:none">
-        <li><a data-toggle="collapse" href="#learn" aria-expanded="false" aria-controls="learn">Learning Isn't Limited to Your Lectures</a></li>
-        <div class="collapse" id="learn">
-          <br>
-          <div class="card card-body">
-            <strong>Learning Isn't Limited to Your Lectures</strong><br>
-            <p class="coursetext">
-              A lot of people think that what you learn in university will set up you nicely for the rest of your life. This is not the case.<br><br>
-              To me, what we learn in university gives us a nice <strong>framework</strong> to what we should learn, but we still need to do a lot of our own independent learning outside of this.
-              For example, there aren't any courses on Python and I wanted to learn it - so I did. I wanted to learn how to make a Discord and Twitter bot - so I did. There weren't any courses on it, I just
-              starting following guides and tutorials I saw online.<br><br>
-              Learning isn't confined to your classrooms. There's a lot to learn that a computer science degree won't cover. It's <i>up to you</i> to learn more outside of your degree requirements, because
-              to be honest, <i>just</i> what you learn in school isn't even remotely enough to find a job. Computer science is a constantly evolving field and you need to keep up, and keep learning above
-              all else.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#organization" aria-expanded="false" aria-controls="organization">Staying Organized</a></li>
-        <div class="collapse" id="organization">
-          <br>
-          <div class="card card-body">
-            <strong>Staying Organized</strong><br>
-            <p class="coursetext">
-              It's pretty damn important you stay on top of your organization in university. Trust me. My first year was abysmal because I thought I could remember everything
-              in my head or through the notes app on my phone.<br><br>
-              Now, I keep a Google calendar to remind of all my lectures, labs, test, and exam dates. I had a physical notebook I used as a journal to keep tracking my current grades in
-              classes, degree progress, and my professors e-mails. I use Discord a lot, so I made my own Discord server where I'm the only member and I use it a <strong>ton</strong> to
-              remember important links, write quick reminders, track my degree progress, write down the requirements to courses I need to take in the future, and a lot more.<br><br>
-              Please stay on top of your organization. It's an easy way to feel overwhelmed otherwise, having so much to remember and not being able to remember all of it, or knowing you wrote
-              something down once and can't remember where you put that piece of paper.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#summer" aria-expanded="false" aria-controls="summer">Utilize Your Summers</a></li>
-        <div class="collapse" id="summer">
-          <br>
-          <div class="card card-body">
-            <strong>Utilize Your Summers</strong><br>
-            <p class="coursetext">
-              I cannot stress this enough: <strong>use your summers wisely</strong>.<br><br>
-              I get you want to enjoy your summer after a long and stressful year, but you can make your next year a lot less stressful if you take maybe one or two courses in the summer. Think about it like this -
-              you take maybe four, five, or six courses in the year. It's tough, but you manage. Now imagine if you only took one or two courses, and was able to dedicate all your time and effort into those courses.
-              You're most likely going to walk away with some high grades.<br><br>
-              The standard is to do five courses a semester: so that's five in the fall, and five in the winter. Although, I really don't like this and feel overwhelmed by so many classes, so what I do instead is take
-              four in the fall, four in the winter, and <i>two in the summer</i>.<br><br>
-              There're lots of pros to taking class in the summer. Want to raise your GPA? Retake a course. Gonna be working relatively close to York over the summer? Take a class. Have an insanely hard class you
-              don't want to screw up your year (cough, EECS3101)? Then take it in the summer. Isolate your difficult courses by taking them in the summer, so it doesn't affect the rest of your school year.<br><br>
-              Since starting university in September 2017, I have not taken a single summer off. I took a course in the summer of 2018, took two courses and worked at York the next summer, and this summer I'll
-              be working full-time and spending a lot of time on my side projects.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#time" aria-expanded="false" aria-controls="time">Time Management</a></li>
-        <div class="collapse" id="time">
-          <br>
-          <div class="card card-body">
-            <strong>Time Management</strong><br>
-            <p class="coursetext">
-              Knowing how to manage your time is a pivotal part in being a university student, and in life.<br><br>
-              This isn't high school anymore where you take four classes in a day, maybe three if you have a spare. You can be taking upwards of maybe five or six courses at once, and if they all
-              have midterms in the same week, or even in the same <i>day</i>, then you better learn how to manage your time wisely.<br><br>
-              I remember I used to play Steam games (CS:GO for life) like crazy in high school. Once university hit, I completely had to change my habits because for me, setting into university life was
-              hard. It's pretty dangerous getting good grades in high school without having to put in any effort, because those habits carry over.<br><br>
-              I ended up uninstalling Steam and fixing my sleeping habits, because it was awful sleeping at 2:00am, getting up for an 8:00am lecture, barely being able to pay attention during it, and
-              then having to catch up on everything post-lecture.<br><br>
-              If you have any bad habits, like sleeping at 4:00am constantly or playing games for hours and hours, break them immediately.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#clubs" aria-expanded="false" aria-controls="clubs">Joining Clubs</a></li>
-        <div class="collapse" id="clubs">
-          <br>
-          <div class="card card-body">
-            <strong>Joining Clubs</strong><br>
-            <p class="coursetext">
-              I know. You hear this a lot.<br><br>
-              Speaking from personal experience though, joining clubs was a pretty big part of getting through university, especially if you're a new student. You get to meet a lot of new people, especially older
-              ones that can give you their insight and knowledge. I made friends with this one student two years above me, and he gave me a lot of advice on what professors to avoid, gave me old midterms to study
-              from, helped me with my labs, and more. Great way to meet people, who could end up providing a lot of relief in your stressful university life.<br><br>
-              I get it, though. You don't know what clubs to join, or you're antisocial, or you can't find anything you're interested in. <i>And that's fine too</i>. You can always meet people other ways, this
-              is just one example of it. Although, I find that as you just progress throughout the year, you'll naturally gravitate towards clubs you want to join. I know that when I was a first year student,
-              I went to one CSHub event and now in third year, I'm the president of CSHub.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#frans" aria-expanded="false" aria-controls="frans">Making Friends</a></li>
-        <div class="collapse" id="frans">
-          <br>
-          <div class="card card-body">
-            <strong>Making Friends</strong><br>
-            <p class="coursetext">
-              I'm just going to say right now - university is <strong>not</strong> a solo sport.<br><br>
-              What does this mean? Go cheat on all your tests and exams? No; it means to establish a good support group. You're bound to see the same people for the next 3-5 years, so you might as well get to know
-              them, right? You're bound to study for the same midterms and exam, so might as well get to know them, right?<br><br>
-              I can definitely say, I would not be where I am right now without the support of all my friends and everyone I met in computer science. I remember one day walking out of a lecture hall having
-              just written a midterm, and I was sitting on a bench waiting for my other friends to come out. I noticed the person sitting beside me had the same shoes as me, so I pointed it out and now he's
-              one of my closest friends who has given me a ton of support through the last few years I've known him.<br><br>
-              Make friends. If you're antisocial or in an awkward shell, it's time to get out of it. You're going to be a professional in a few years, it's important to know how to establish
-              good relations with people, know to talk to one another, and how to make friends.<br><br>
-              Your lectures and the computer science channel in the York University Discord server is a great way to start talking to people. Frosh is also a really good opportunity to meet a lot of people in your
-              faculty as well. I liked my frosh so much, I ended up being a frosh leader for the next two years as well.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#campus" aria-expanded="false" aria-controls="campus">Campus Resources</a></li>
-        <div class="collapse" id="campus">
-          <br>
-          <div class="card card-body">
-            <strong>Campus Resources</strong><br>
-            <p class="coursetext">
-              If needed, you can talk to a guidance counsellor at the Bennett Centre for free.<br><br>
-              The gym at Tait McKenzie is pretty good for the price you pay ($15 for the entire year).<br><br>
-              The writing centre in the Scott library can help you edit and proofread your papers.<br><br>
-              The IT help desks stationed in the Scott library and Steacie library can help you diagnose problems you're having with your devices (can't connect to the internet, forgot your student password, etcetera.)</p>
-          </div>
-        </div>
-
-      </ul>
-    </section>
-
-    <br>
-    <h3></h3>
-    <h3></h3>
-    <br>
-
-    <section id="coop">
-      <h2>Co-op & Internships</h2>
-      <br>
-      <ul style="list-style-type:none">
-        <li><a data-toggle="collapse" href="#intern" aria-expanded="false" aria-controls="intern">What's Co-Op? What's an Internship?</a></li>
-        <div class="collapse" id="intern">
-          <br>
-          <div class="card card-body">
-            <strong>What's Co-Op? What's an Internship?</strong><br>
-            <p class="coursetext">
-              Basically, co-op and internships means working in the middle of your degree. It's a way to get real, industry working experience as a student.<br><br>
-              I'm asked a lot what's the difference between the two is - and in the "real world" there isn't one. It's just an opportunity for a student to get some relevant, real, working
-              experience with a company.<br><br>
-              Although, to Lassonde, there <strong>is</strong> a difference. The differences are explained in Co-op & Internships --> Lassonde Programs.
-            </p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#why" aria-expanded="false" aria-controls="why">Why Should You Do Them?</a>
-        </li>
-        <div class="collapse" id="why">
-          <br>
-          <div class="card card-body">
-            <strong>Why Should You Do Them?</strong><br>
-            <p class="coursetext">
-              Okay. This is gonna be a long one, because I feel <i>very strongly</i> about the topic.<br><br>
-              I remember looking around my EECS1012 LAS A lecture room once, and I saw so many people. Then I remember about all the students in other lectures, students in their second, third, and fourth
-              years. Then I remembered how many universities we have in Canada. Essentially the point I'm trying to make here is - <strong>there's a lot of damn people you're competing with here</strong>.<br><br>
-              I remember talking to my older sister (who was in engineeering) about how are you supposed to <i>stand out</i> from all these people, and she said <strong>work experience</strong>. But, how can you
-              get work experience as a new grad if you don't <i>have</i> any to begin with? There's surely a bunch of people more qualified than me, how am I ever going to get noticed? How do people get work
-              experience in the first place? It's a catch-22!<br><br>
-              The answer: <strong>co-op and internships</strong>.<br><br>
-              See, when you graduate and apply for jobs, you're gonna be applying as a <i>new grad</i> and you're gonna be expected to know a lot and perform well. You're being hired based on your ability to perform.
-              Although, as an intern, you're being hired based on your ability to perform, but <i>also your ability to grow into someone who can perform</i>.<br><br>
-              As a student, I recommend you should be aiming to accomplish as many internships as you can before you graduate. That way when you do graduate, you're gonna be worth a million dollars with how much knowledge and
-              work experience you've garnered! In my opinion, the way I like to learn is through doing real, practical work - applying my knowledge in a real environment and <i>not through reading a bunch of slides</i>.<br><br>
-              I could honestly go on for hours about the value of getting an internship and work experience in your undergrad, but I think I made my point clear. It's important to stay competitive, and to do so you need
-              work experience. But as an undergrad, you don't really know much. So, you do an internship. Then when you graduate, you have a bunch of real, industry knowledge and experience and are a strong competitor.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#first" aria-expanded="false" aria-controls="first">How Do I Get My First?</a></li>
-        <div class="collapse" id="first">
-          <br>
-          <div class="card card-body">
-            <strong>How Do I Get My First?</strong><br>
-            <p class="coursetext">
-              Getting your first is always going to be the hardest. Once you get your first work experience down, you can use that momentum to strengthen your resume and then get your second, third, and fourth
-              work experiences. But the question is - how can I go about getting my first one?<br><br>
-              This one is hard, and remember that it's largely a game of chance too. I sent out ~200 applications, and got <strong>one</strong> job offer from all those applications when applying to my first
-              internship. I would recommend having a strong portfolio of side projects to display on your GitHub, a well-polished LinkedIn, and strong data structure and algorithm skills (practise your LeetCode a lot).<br><br>
-              It also obviously helps if you know someone that can get you a referral or can get you an interview at the snap of a finger - again going back to my point about making friends (Miscellaneous --> Making Friends),
-              you never know who can provide what for you. Someone I talked to for half an hour in the Bergeron lobby while we were waiting in line ended up giving me a referral to RBC and we're still good friends to this day.<br><br>
-              Remember that it <i>is</i> still largely lucked based, so don't feel discouraged if you get nothing after a long and lengthy job hunt. All I have to say is <strong>keep applying</strong>.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#las" aria-expanded="false" aria-controls="las">Lassonde Programs</a></li>
-        <div class="collapse" id="las">
-          <br>
-          <div class="card card-body">
-            <strong>Lassonde Programs</strong><br>
-            <p class="coursetext">
-              Each have their own respective requirements. More information can be found on their offical website. Here's a quick difference between the two:<br><br>
-
-              Co-op:<br>
-              - needs a 5.0 CGPA (meaning overall)<br>
-              - starts after you're done your second year in the summer at the earliest (meaning you'll be spending your winter taking courses and applying to jobs at the same time)<br>
-              - go out twice in shorter terms (4-8 months), once after your second year, and once again after your third year<br><br>
-
-              Internship:<br>
-              - needs a 6.0 MGPA (major GPA - meaning EECS and MATH courses)<br>
-              - starts after your third year in the summer at the earliest (meaning you'll spend the winter taking courses and applying as well)<br>
-              - go out once for a lengthier time (4-16 months)<br><br>
-
-              To be honest I don't see much of a difference and why Lassonde divides the two, but I digress. Just make sure that at the end of the day, <strong>you graduate having some relevant work experience</strong>.
-              Also, if you don't meet the GPA requirements to be in the Lassonde programs, it's not that big of a deal. You can still find internships without doing it through Lassonde's programs.<br><br>
-
-              The benefit of being in a Lassonde program is that they just aggregate a bunch of job postings for you on a job board so you don't have to find them yourself, and there are a few Lassonde exclusive
-              job postings as well (so while you could find the job postings on the company websites themselves, there are a few you can't find unless you're in the Lassonde program).</p> <br>
-
-              Finally: is there a benefit to even being in one of the Lassonde programs? Yes, especially if you have no experience. Most companies will want you to be part of an accredited
-              co-op or internship program, because they can get tax breaks for their interns. Most Big-N companies won't care about this, but if you have no experience, you'll want to start small before working
-              your way up. Being part of a Lassonde program can help a lot in finding your first internship, but you can disregard joining one of the programs if you already have a few internships under your belt.
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#finding-jobs" aria-expanded="false" aria-controls="finding-jobs">How Do I Find Jobs?</a></li>
-        <div class="collapse" id="finding-jobs">
-          <br>
-          <div class="card card-body">
-            <strong>How Do I Find Jobs?</strong><br>
-            <p class="coursetext">
-              I think the mistake a lot of students make on their first job search is thinking they're limited to the Lassonde job portal (which is not substantial whatsoever) or
-              searching 'Software Engineer Intern' on LinkedIn. There's two important components when job searching: <strong>when to search, and how</strong>. <br><br>
-
-              For SUMMER internships, postings can open as early as July-August (the prior year). For FALL internships, postings will open around March-April, and for
-              WINTER internships, postings will be open around September-October. Summer is a very busy season - most companies hire for summer only, and the ones that hire all year,
-              summer has the most headcount. Fall and winter and generally what I call 'dead seasons'. It's possible to get internships for fall and winter, just much harder. <br><br>
-
-              Here's how I apply to jobs: <br><br>
-              - I have a long list of some 100-200 tech companies, and around when internship season begins, I'll Google search '{company name} careers', go to their careers page, and apply
-              on the company website. Most companies won't be shelling out money to post ads on LinkedIn. They know most people will go to their website to apply, and people do. <br>
-              - Depending on the season you're looking for, Google '{season} internships GitHub repo' - there's usually a GitHub repo floating around every season that's updated constantly
-              as internship applications open up. A good example is <a class="a-special" href="https://github.com/pittcsc/Summer2022-Internships" target="_blank">this repo</a>. <br>
-              - Talk in friend groups. If you have a group of friends and you're all collectively trying to find internships together, make a group chat and post links to new applications
-              you just applied to. Your friends might have applied to a posting you missed, and vice versa.
-            </p>
-          </div>
-        </div>
-
-      </ul>
-    </section>
-
-    <br>
-    <h3></h3>
-    <h3></h3>
-    <br>
-
-    <section id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <br>
-      <ul style="list-style-type:none">
-        <li><a data-toggle="collapse" href="#hons" aria-expanded="false" aria-controls="hons">The Difference From Honours and Non-Honours</a></li>
-        <div class="collapse" id="hons">
-          <br>
-          <div class="card card-body">
-            <strong>The Difference From Honours and Non-Honours?</strong><br>
-            <p class="coursetext">
-              Basically on paper, honours has a lot more requirements and you need to have 120.0 credits instead of 90.0 credits, for the non-honours.<br><br>
-              I say that if you have no idea what you want to do with your life in your third year, then take the honours and do your EECS4XXX courses. It'll help you explore more topics and can
-              help you decide what you want to do post-grad. If you already have a firm grasp of what you want to do when you graduate and none of the EECS4XXX courses seem to interest you, I wouldn't
-              do the honours. Of course, this is <strong>my personal opinion</strong> and there a lot more factors that contribute to this decision, so I would advise talking to the co-op department
-              first before jumping the gun on anything.<br><br>
-              Although, if you <i>do</i> want to participate in Lassonde's co-op / internship program, you <strong>do</strong> have to be in the honours. Then again, being in their programs is not
-              the only way to find a job placement. You can do it by applying outside the school too.<br><br>
-              A lot of factor in - but talk to the necessary people to help you make your decision. It's important to note in comparison to other universities, their "normal computer science degree" is
-              <i>really</i> our "honours" degree. I know some people get caught up thinking that being in an honours program is "special", but really honours is the "standard" degree; at other schools, their four
-              year standard degree is our honours.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#bsc" aria-expanded="false" aria-controls="bsc">Bachelors of Art or Science?</a></li>
-        <div class="collapse" id="bsc">
-          <br>
-          <div class="card card-body">
-            <strong>Bachelors of Art or Science?</strong><br>
-            <p class="coursetext">
-              In the art variant you'll take more humanities for your electives, and science variant you'll take more science courses for your electives. Same core courses for both parties.<br><br>
-              I can't really say which one is better than the other, but if I <i>had</i> to choose I would lean more towards sciences - I am doing a B.Sc after all, so there might
-              be some bias in what I say. The best way I can put this is, if you like arts and humanities, the B.A is for you. If you like science and mathematics, the B.Sc is for you.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#pacing" aria-expanded="false" aria-controls="pacing">How Should I Pace Myself?</a></li>
-        <div class="collapse" id="pacing">
-          <br>
-          <div class="card card-body">
-            <strong>How Should I Pace Myself?</strong><br>
-            <p class="coursetext">
-              Take courses as needed. There's no need to rush yourself.<br><br>
-              I hear this a lot: "I need to take X, Y, Z, I, J, K courses all in the same semester to <strong>catch up</strong>!"<br><br>
-              No, you don't. There is no "catching up." Are you in university to get your degree as fast as possible and leave barely knowing the content, or are you in university to actually <i>learn</i>
-              and know what you're doing?<br><br>
-              In my second year, I was too caught up in this. I wanted to graduate at the same time with my friends - but ultimately taking so many courses at once hurt me a lot more than anything. Pace yourself
-              according to your strengths. If you can only manage four courses in a semester, that's fine. If you can only manage three, two, or even one course, <i>that's fine</i>. And it's important you
-              know this. Don't let yourself get caught up in what other people are doing.<br><br>
-              Alternatively, if you're like me and don't really like learning much through textbooks and lectures and instead by doing, then just get your degree and get out. C's get degrees, am I right?</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#grad" aria-expanded="false" aria-controls="grad">Worried About Not Graduating "on Time?"</a></li>
-        <div class="collapse" id="grad">
-          <br>
-          <div class="card card-body">
-            <strong>Worried About Not Graduating "on Time?"</strong><br>
-            <p class="coursetext">
-              Okay, so technically, computer science is a four year program. Given you need 120.0 credits, that's 30.0 credits a year, which is 15.0 credits a semester, which is
-              about <strong>five</strong> courses a term, considering you take your summers off. If you're in the 90.0 credit program, it's 30.0 credits a year for three years instead of four. You can take
-              summer school to accelerate this.<br><br>
-              Despite this, there is no "graduating on time" in my opinion. Sure, computer science is a four year degree, right? So you expect to get it done in four year? I've actually met a lot of people
-              who did their computer science degree in five or six years, and they ended up being a lot happier because of it. Taking your time and knowing you can't handle a standard amount is perfectly
-              fine. Hell, I'll be taking 5-6 years to do my degree because I want to rack up a lot of work experience before I graduate. Though, this is my opinion. My friend actually believes the oppposite;
-              instead to get your degree and just get out because experience is king, not your grades (which I can also get behind).<br><br>
-              It's like my dad says to me - take your time and be happy. You have the rest of your life ahead of you. Just make sure you don't take 10 years to get your degree - it might not be a race, but you
-              shouldn't need 7-8 years for a four year program.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#york" aria-expanded="false" aria-controls="york">Is York a Good School for Computer Science?</a></li>
-        <div class="collapse" id="york">
-          <br>
-          <div class="card card-body">
-            <strong>Is York a Good School for Computer Science?</strong><br>
-            <p class="coursetext">
-              To me, any school is a good school for computer science if they have a good co-op / internship program. If you asked me which is the <i>best</i> school for computer science, I would think that
-              Waterloo is <i>the</i> school for computer science because of how masterful their computer science program is - graduating in five years with ~24 months of experience. How? Because between each
-              of their years (first to second, second to third) they make good use of the summers, whether it's for taking classes or using it for co-op.<br><br>
-              I used to think that was awful, five straight years of school with no break - but it's not. It's class for about 8 months to a year, then a break for co-op, then back to school. It's a great
-              system they got there, but there's no reason you can't do the same at York. During the summers, just make sure you're using them efficiently whether you decide to find a job or take classes
-              (Miscellaneous & General Tips --> Utilize Your Summers).<br><br>
-              I do think York is lacking in some departments, I wish some courses were taught differently (EECS3311) but honestly, I'm <strong>very</strong> happy with my decision to study here - you make the most
-              out of it. If you do just the bare minimum to get your degree and leave you probably won't have the best time. However, I'm very involved in the community, and I love all the friends I've made
-              and feel such a strong sense of camaraderie here.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#mathz" aria-expanded="false" aria-controls="mathz">How Much Math Is in
-            Computer Science?</a></li>
-        <div class="collapse" id="mathz">
-          <br>
-          <div class="card card-body">
-            <strong>How Much Math Is in Computer Science?</strong><br>
-            I asked myself the same thing in high school and when I was a first year student because I was awful at advanced functions and calculus. Truth be told, "computer science math" is not the same as
-            advanced functions and calculus, and I say this sparingly. I find myself programming more logically than I do mathematically, if that makes sense.<br><br>
-            In the degree itself, yes you'll have your fair share of math classes (EECS1019, MATH1090, MATH1300, MATH1310, MATH2030) but after they're done, they're done. I haven't found myself using anything
-            I learned in calculus I or calculus II, but discrete mathematics? Definitely.<br><br>
-            Again, I say this sparingly for lack of better word, but "computer science math" is really more logical based and less calculations based. If you hate calculus, you just need to truck through it
-            and then you're free.
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#lol" aria-expanded="false" aria-controls="lol">Can I Graduate With 89.0 (non-honours) or 119.0 Credits (honours)?</a></li>
-        <div class="collapse" id="lol">
-          <br>
-          <div class="card card-body">
-            <strong>Can I Graduate With 89.0 (non-honours) or 119.0 Credits (honours)?</strong><br>
-            <p class="coursetext">
-              If you're asking this question, it's because you're almost at the end of your degree and noticed you can't take another 3.0 credit course without going over the 90.0 / 120.0 threshold.<br><br>
-              Let's first remember how we got here - majority of the courses you take are either 3.0 or 6.0 credits - numbers that are divisble by 3.0. Since 90.0 / 120.0 are also divisble by 3.0, it works out!
-              Although, we had to take EECS1001 which is 1.0 credit (so now we're "offset" by one) and also EECS2021 which is 4.0 credits (so now we're "offset" by two).<br><br>
-              But basically - <strong>no</strong> you can't. You're either going to have to find another course to fix your offset (meaning restoring your credit count to a number that is divisible by 3.0 again) or just
-              take another course and you'll be pushed past the required credit total and end up graduating with 92.0 or 122.0 credits. Perfectly fine, but a waste of money if you would prefer to end on a perfect
-              90.0 or 120.0.</p>
-          </div>
-        </div>
-
-      </ul>
-    </section>
-
-    <br>
-    <h3></h3>
-    <h3></h3>
-    <br>
-
-    <section id="author">
-      <h2>About Author</h2>
-      <br>
-      <ul style="list-style-type:none">
-
-        <li><a data-toggle="collapse" href="#me" aria-expanded="false" aria-controls="me">About Me</a></li>
-        <div class="collapse" id="me">
-          <br>
-          <div class="card card-body">
-            <strong>About Me</strong><br>
-            <p class="coursetext">
-              Hey there, I'm Christopher. <br><br>
-              The reason I made this guide is because many people would reach out to me with a lot of common questions, so I wanted to put this website together as a way to address them,
-              to document everything I've learned over the years, and things I wish I knew when I was a first year student. I was inspired when I saw students from other universities
-              making guides like this, so I wanted to do the same. If there are any inconsistencies, something outdated, or want a topic added, then feel free to message me on Discord;
-              <strong>@chrispy#8933</strong>.
-            </p>
-          </div>
-        </div>
-
-        <br>
-
-        <li><a data-toggle="collapse" href="#path" aria-expanded="false" aria-controls="path">My Unconventional Path</a></li>
-        <div class="collapse" id="path">
-          <br>
-          <div class="card card-body">
-            <strong>My Unconventional Path</strong><br>
-            <p class="coursetext">
-              A condensed version is below. <br><br>
-
-              - Graduated from high school June 2017. I had no idea what I wanted to do with the rest of my life. I knew I liked computers, so I ran with that. I aced all my chemsitry
-              classes in high school, so I went with that too. I applied to digital media and chemistry at York, and computer science at York, Waterloo and Ryerson. I got into everything
-              except Waterloo; I got deferred to geomatics. I went to York for computer science. <br><br>
-              - Started computer science in September 2017. I've said it before and I'll say it again - computer science isn't a kind major to those not deeply passionate about it. I got
-              my ass handed to me in first year, and was struggling in first year courses like EECS1019, EECS1022, and MATH1310. I dropped two courses in my first year, and felt really
-              defeated about it. If everyone else could do it, why couldn't I? I talked to a Lassonde academic advisor about getting advice, and they suggested I switch majors. I stayed in. <br><br>
-              - Made it through my first year, fall 2017 and winter 2018. I took summer school courses to catch up on the ones I dropped winter semester. Would've been more productive to
-              look for internships instead, but I had no idea what internships were. No one told me. I had no idea how to advance my career, so I did class instead. <br><br>
-              - Second year was more kind to me since I got better at time management and how to optimize my schedule. Having a good group of friends to rely on when I need help was also
-              great. I got through fall 2018 and winter 2019 just fine, but winter 2019 was the first time I learned about the Lassonde internship program, and that it needed a 6.0 GPA to enter.
-              I had a 4.6. That summer 2019, I retook 3 courses, converted 3 Ds to 3 As, and brought my GPA up to a 6.1. <br><br>
-              - Third year was an important one. I went to Hack the North 2019, and it really opened my eyes. I got to talk to a lot of students who told me about their internships at Google,
-              Facebook, Amazon, etc. (albeit at the time they were probably just bragging, but to me it was humbling) and I realized I also wanted to do the same. I finally got my head out of my
-              ass and I told myself that summer, I'd get my first internship. <br><br>
-              - Being a student and looking for internships is not easy. In between juggling 5 classes, trying to LeetCode, do side projects, and apply to jobs was really hard. Seeing all my other
-              friends get interviews and job offers while I didn't was hard. Me failing the few interviews I had was hard. I was getting pretty miserable and depressed, but last minute I was able
-              to clutch an OA from CaseWare, got an interview, and converted it to an 8 month long internship offer. I got my first internship! <br><br>
-              - I lost my first internship. Because of the COVID-19 pandemic, CaseWare had to let go half of its interns. I was in the unlucky half. Back to applying. <br><br>
-              - I saw this one posting for the 'MLH Fellowship' program, which was an Open Source Software development internship catered towards students who lost their internship to COVID-19.
-              I applied and got it. <br><br>
-              - Finished my third year (fall 2019, winter 2020) and did my first internship at the MLH Fellowship that summer 2020. A few months into this internship, CaseWare emailed me asking
-              if I was interested in joining them in September. I said yes. <br><br>
-              - After finishing my internship at the MLH Fellowship, I went to CaseWare. During my time at CaseWare, I kept applying to jobs because I wasn't ready to go back to school, and I wanted
-              to intern somewhere else for winter 2021 (two 4 month internships > one 8 month internship). I got an offer at MDA Space for winter 2021. <br><br>
-              - After CaseWare, I went to work at MDA Space. During my internship, I still kept applying. I got an internship offer at Amazon for summer 2021, and also got a Shopify offer
-              for summer 2021. I managed to defer Shopify to fall 2021, though. I also decided that I no longer want to do the 120 credit degree, and will do the 90 credit degree instead.
-              I had all the job experience in the world, getting a full time job offer after I graduate shouldn't be too hard (I hope), despite me not having the 'honours' degree. <br><br>
-              - That brings us to present day. It's currently April 16th, 2021 (middle of winter 2021 semester if you will). I'm currently still working at MDA Space, but will be going to Amazon
-              this summer and will go to Shopify this fall. After the fall, I think I'll finally go back to school and do my last courses and graduate. Will update this as the timeline unfolds.
-
-              <br><br>
-
-              //
-
-              <br><br>
-
-              A condensed version: <br><br>
-
-              Fall 2017: started at York. <br>
-              Winter 2018: finished my first year. <br>
-              Summer 2018: took two summer school courses to catch up on the ones I dropped winter 2018. <br><br>
-
-              Fall 2018: second year. <br>
-              Winter 2019: finished my second year. Realized I needed to get my GPA up for the Lassonde internship program. <br>
-              Summer 2019: retook 3 courses, bringing 3 Ds to 3 As. Went from a 4.6 to a 6.1. Got admitted into the Lassonde internship program. <br><br>
-
-              Fall 2019: third year. Went to Hack the North 2019 which really opened my eyes and made me develop a strong passion in computer science. Vowed to get my first internship
-              this summer. Started applying to jobs, around ~100 applications with no responses. <br>
-              Winter 2020: first half of this semester was hell. No jobs, doing really bad in classes, everyone in my friend group but me had secured jobs. Out of nowhere, CaseWare
-              contacted me for an interview. I took it and converted it to an offer! <br>
-              Summer 2020: lost my internship because of COVID-19. Kept applying, and joined the MLH Fellowship this summer instead. CaseWare later contacted me this summer asking if
-              I wanted to join them this September, I said yes. <br><br>
-
-              Fall 2020: worked at CaseWare. Kept applying to jobs. Got an offer at MDA Space. Got interviews at Facebook, Apple, and Palo Alto Networks, but failed them all.<br>
-              Winter 2021 (present day): working at MDA Space. Kept applying to jobs. Got two offers, one at Amazon and one at Shopify. <br>
-              Summer 2021: will be interning at Amazon. <br><br>
-
-              Fall 2021: will be interning at Shopify, and will be applying to 2022 internships and new grad positions at this time. <br>
-              Winter 2022: will do my final courses at York, and graduate. <br>
-              Summer 2022: ??
-            </p>
-          </div>
-        </div>
-
-        <br>
-
-        <p style="text-align:right;">
-          Found this guide useful? Star it on <a class="a-special" target="_blank" href="https://github.com/chrisngyn/LCSUG">GitHub</a>! // <strong>Last updated on 04/16/2020.</strong>
-        </p>
-      </ul>
-    </section>
-  </div>
-
-</body>
-
+  <script src="./js/components/textbox.js"></script>
+  </body>
 </html>

@@ -1,79 +1,27 @@
-.nav-item {
-  border-bottom: 1.5px solid #000;
-  border-radius: 0 !important;
-}
-
-.nav-item:nth-child(1) {
-  /* creative */
-  border-color: #a34775;
-}
-
-.nav-item:nth-child(2) {
-  /* passionate */
-  border-color: #d14747;
-}
-
-.nav-item:nth-child(3) {
-  /* rational */
-  border-color: #194775;
-}
-
-.nav-item:nth-child(4) {
-  /* confident */
-  border-color: #47a3a3;
-}
-
-.nav-item:nth-child(5) {
-  /* ingenious */
-  border-color: #ffd119;
-}
-
-body {
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 2vw;
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-  background-color: #F5F5F9;
-}
-
 h1 {
-  text-align: center;
   font-family: 'Roboto', sans-serif;
-  line-height: 5px;
+  text-align: center;
   color: #24292e;
-  /* border or not? */
-  border-bottom: 1px solid lightgray !important;
   padding-bottom: 8px;
   margin-bottom: 0;
+  line-height: 5px;
 }
 
 h3 {
-  /* top borders and bottom borders lol*/
   border-top: 1px solid lightgray !important;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F9;
+  position: relative;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 2vw;
+}
+
 p {
-  /* font-family: 'Roboto', sans-serif; */
   color: #24292e;
-}
-
-.coursetext {
-  color: #24292e;
-  padding-bottom: 0px !important;
-  margin-bottom: 0px !important;
-}
-
-hr {
-  border-bottom: 1px solid lightgray !important;
-}
-
-nav {
-  margin-bottom: 8px;
-}
-
-.special-link {
-  color: #007bff !important;
 }
 
 a {
@@ -84,8 +32,107 @@ a:hover {
   color: #007bff !important;
 }
 
+hr {
+  border-bottom: 1px solid lightgray !important;
+}
+
+nav {
+  margin-bottom: 8px;
+}
+
+strong {
+  display: inline !important;
+}
+
+.nav-item {
+  border-bottom: 1.5px solid #000;
+  border-radius: 0 !important;
+}
+
+.nav-pills {
+  background-color: transparent !important;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: #24292e;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.nav-link.active {
+  color: #007bff !important;
+  background-color: transparent !important;
+}
+
+.nav-item:nth-child(1) {
+  border-color: #a34775;
+}
+
+.nav-item:nth-child(2) {
+  border-color: #d14747;
+}
+
+.nav-item:nth-child(3) {
+  border-color: #194775;
+}
+
+.nav-item:nth-child(4) {
+  border-color: #47a3a3;
+}
+
+.nav-item:nth-child(5) {
+  border-color: #ffd119;
+}
+
+.landing {
+  position: fixed;
+  display: block;
+  height: 100vh;
+}
+
+.photo {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 80% !important;
+  padding-bottom: 20px;
+}
+
+.borderr {
+  stroke: #222;
+  stroke-width: 3mm;
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  fill-opacity: 0;
+  -webkit-animation: anim1 1.5s linear 1s forwards infinite;
+  animation: anim1 1.5s linear 1s forwards infinite;
+  height: 50vh;
+}
+
+.coursetext {
+  color: #24292e;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.checked {
+  color: orange;
+}
+
+.special-link {
+  color: #007bff !important;
+}
+
 .a-special {
   color: #007bff !important;
+}
+
+.specialUL {
+  list-style: none;
+  padding-left: 0;
 }
 
 #cover-page-outer-container {
@@ -118,58 +165,6 @@ a:hover {
   font-size: 16px;
 }
 
-.nav-link {
-  font-size: 20px;
-  color: #24292e;
-}
-
-.nav-link:hover {
-  color: #007bff;
-}
-
-.checked {
-  color: orange;
-}
-
-.nav-pills {
-  background-color: transparent !important;
-}
-
-.nav-link.active {
-  color: #007bff !important;
-  background-color: transparent !important;
-}
-
-.specialUL {
-  list-style: none;
-  padding-left: 0;
-}
-
-strong {
-  display: inline !important;
-}
-
-.photo {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: 80% !important;
-  /* width: 50% !important; */
-  /* max-width: 75% !important; */
-}
-
-/* classes by Lynn */
-.borderr {
-  stroke: #222;
-  stroke-width: 3mm;
-  stroke-linejoin: miter;
-  stroke-linecap: square;
-  fill-opacity: 0;
-  -webkit-animation: anim1 1.5s linear 1s forwards infinite;
-  animation: anim1 1.5s linear 1s forwards infinite;
-  height: 50vh;
-}
-
 @-webkit-keyframes anim1 {
   0% {
     stroke: #222;
@@ -196,11 +191,4 @@ strong {
   100% {
     stroke: #222;
   }
-}
-
-.landing {
-  position: fixed;
-  display: block;
-  height: 100vh;
-  /* top: 40vh; */
 }
